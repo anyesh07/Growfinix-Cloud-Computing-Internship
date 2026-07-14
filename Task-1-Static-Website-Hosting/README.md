@@ -45,9 +45,27 @@ The objective of this task is to deploy and host a static website using Amazon S
 
 ![Deployed Website](Screenshot%202026-07-14%20183232.png)
 
+## Amazon CloudFront Deployment
+
+To improve website performance and content delivery, an Amazon CloudFront distribution was created using the S3 static website endpoint as the origin.
+
+### Steps Performed
+
+1. Created an Amazon CloudFront distribution.
+2. Selected the Amazon S3 static website endpoint as the origin.
+3. Configured the recommended origin and cache settings.
+4. Deployed the CloudFront distribution.
+5. Successfully accessed the static website using the CloudFront distribution domain.
+
+### CloudFront Deployment Result
+
+The static website was successfully delivered through Amazon CloudFront.
+
+![CloudFront Deployment](Screenshot%202026-07-14%20194559.png)
+
 ## Result
 
-The static website was successfully built, deployed, and hosted using Amazon S3 Static Website Hosting.
+The static website was successfully built, deployed, and hosted using Amazon S3 Static Website Hosting, and content delivery was enhanced using Amazon CloudFront.
 
 ## Website Endpoint
 
