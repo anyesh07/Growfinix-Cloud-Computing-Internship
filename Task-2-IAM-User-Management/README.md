@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create IAM user groups, assign appropriate AWS managed policies, create IAM users, and add each user to the appropriate group following AWS security best practices.
+Create IAM user groups, attach appropriate AWS managed policies, create IAM users, and assign each user to the correct group following AWS security best practices.
 
 ---
 
@@ -12,69 +12,88 @@ Create IAM user groups, assign appropriate AWS managed policies, create IAM user
 
 ---
 
-## User Groups Created
+## Implementation Steps
 
-| Group Name | Permission |
-|------------|------------|
-| Developers | AmazonEC2FullAccess |
-| Billing | Billing |
-| Auditors | ReadOnlyAccess |
+### Step 1: Open AWS IAM Dashboard
 
----
+Access the AWS IAM service from the AWS Management Console.
 
-## IAM Users Created
-
-| User | Group |
-|------|-------|
-| developer1 | Developers |
-| Billing1 | Billing |
-| auditor1 | Auditors |
+![IAM Dashboard](Screenshot%202026-07-15%20113236.png)
 
 ---
 
-## Steps Performed
+### Step 2: Create IAM User Groups
 
-1. Opened AWS IAM Console.
-2. Created three IAM groups:
-   - Developers
-   - Billing
-   - Auditors
-3. Attached AWS managed policies to each group.
-4. Created three IAM users.
-5. Enabled AWS Management Console access.
-6. Added each user to the correct IAM group.
-7. Verified all users were created successfully.
+Created three IAM user groups:
+
+- Developers
+- Billing
+- Auditors
+
+![IAM Groups Created](Screenshot%202026-07-15%20113643.png)
 
 ---
 
-## Screenshots
+### Step 3: Attach Permissions to User Groups
 
-### 1. IAM Dashboard
+Assigned AWS managed policies to each group.
 
-![IAM Dashboard](Screenshot1.png)
+#### Developers Group
+- AmazonEC2FullAccess
 
-### 2. IAM Groups Created
+![Developers Policy](Screenshot%202026-07-15%20113850.png)
 
-![IAM Groups](Screenshot2.png)
+#### Billing Group
+- Billing
 
-### 3. Developers Group Permission
+![Billing Policy](Screenshot%202026-07-15%20114102.png)
 
-![Developers](Screenshot3.png)
+---
 
-### 4. Billing Group Permission
+### Step 4: Verify Group Permissions
 
-![Billing](Screenshot4.png)
+Verified that all IAM groups have their respective permissions attached.
 
-### 5. Auditors Group Permission
+![Groups with Policies](Screenshot%202026-07-15%20122245.png)
 
-![Auditors](Screenshot5.png)
+---
 
-### 6. IAM Users Created
+### Step 5: Create IAM Users
 
-![Users](Screenshot6.png)
+Created IAM users according to their job roles.
+
+Example: Creating **developer1**
+
+![Create User](Screenshot%202026-07-15%20122534.png)
+
+---
+
+### Step 6: Assign Users to Groups
+
+Assigned each IAM user to the appropriate IAM group.
+
+- developer1 → Developers
+- Billing1 → Billing
+- auditor1 → Auditors
+
+![Assign User to Group](Screenshot%202026-07-15%20122701.png)
+
+---
+
+### Step 7: Verify IAM Users
+
+Verified that all IAM users were successfully created and added to their respective groups.
+
+![Final IAM Users](Screenshot%202026-07-15%20122724.png)
 
 ---
 
 ## Result
 
-Successfully implemented AWS IAM user management by creating user groups, assigning permissions, creating users, and organizing them according to their roles using AWS IAM best practices.
+Successfully implemented IAM User Management by:
+
+- Creating IAM user groups
+- Assigning AWS managed policies
+- Creating IAM users
+- Adding users to the appropriate groups
+- Following AWS Identity and Access Management best practices
